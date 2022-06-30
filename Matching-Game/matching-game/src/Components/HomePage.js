@@ -4,6 +4,7 @@ const Homepage = (params) => {
   return (
     <div>
     <div className="square">
+        <img src={params.link}/>
     </div>
     <p>{params.Topic}</p>
     </div>
