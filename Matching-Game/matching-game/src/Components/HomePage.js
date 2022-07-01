@@ -1,12 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Homepage = (params) => {
   return (
     <div>
-    <div className="square">
-        <img src={params.link} onClick={params.click}/>
-    </div>
-    <p>{params.Topic}</p>
+        <div className="square">
+            <Link to={params.site}>
+                <img src={params.link}/>
+            </Link>
+        </div>
+        <p>{params.Topic}</p>
     </div>
   );
   
