@@ -34,6 +34,17 @@ const cardImages = [
      <div className="Hero">
    <h2>Matching Game 1</h2>
    <button onClick={shuffleCards}>Start</button>
+   
+   <div className ="card-grid">
+     {cards.map(card => (
+       <div className="card" key={card.id}>
+         <div>
+           <img className="front" src={card.src} alt= "card front" />
+           <img className="back" src="/images/gray.png" alt="card back" />
+         </div>
+       </div>
+     ))}
+   </div>
    </div>
    );
 
