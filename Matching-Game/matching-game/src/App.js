@@ -4,6 +4,7 @@ import Homepage from './Components/HomePage';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import FirstGame from './Components/FirstGame';
 import SecondGame from './Components/SecondGame';
+import ThirdGame from './Components/ThirdGame';
 
 function App() {
 // const array = ["Topic 1","Topic 2","Topic 3"]
@@ -21,7 +22,7 @@ const array = [
   {
     "Topic":'Animals',
     "Image":'https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX5188131.jpg',
-    "Page": "/hero"
+    "Page": "/animal"
   }];
 
   const listGames = array.map(item => {
@@ -40,6 +41,7 @@ const array = [
           <Route path="/" element={listGames} />
           <Route path="/hero" element={<FirstGame />} />
           <Route path="/video" element={<SecondGame />} />
+          <Route path="/animal" element={<ThirdGame />} />
         </Routes>
       </main>
     </div>
