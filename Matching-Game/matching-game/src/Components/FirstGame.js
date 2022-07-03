@@ -1,8 +1,8 @@
 import React from "react";
 import "../App.css";
 import { useState } from "react";
-import SingleCard from "./SingleCard";
 import { useEffect } from "react";
+import FirstCard from "./FirstCard";
 
 const cardImages = [
   { src: "/images/batman-1.png", matched: false },
@@ -84,7 +84,7 @@ function FirstGame() {
 
       <div className="card-grid">
         {cards.map((card) => (
-          <SingleCard
+          <FirstCard
             key={card.id}
             card={card}
             handleChoice={handleChoice}

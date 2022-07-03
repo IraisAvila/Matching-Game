@@ -1,7 +1,7 @@
-import "./SingleCard.css";
+import "./SecondCard.css";
 
 
-export default function SingleCard({ card, handleChoice, flipped, disabled }) {
+export default function SecondCard({ card, handleChoice, flipped, disabled }) {
 
     const handleClick = () => {
         if (!disabled) {
