@@ -1,39 +1,41 @@
+ /* Animation */
  :root {
   --animate-delay: 3s;
 }
-
+/*All Header 1 */
 h1 {
   text-align: center;
 }
-
+/* Paragraph */
 p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 25px;
-  font-display: inherit;
   text-align: center;
 }
-
- .square {
-  height: 180px;
-  width: 200px;
-  margin: auto;
-  background-color: rgb(114, 201, 255);
-  justify-content: space-evenly;
-  justify-items: center;
-  align-content: space-evenly;
-  align-items: center;
-}
-
-body {
-  margin: 0;
-  margin-bottom: 25rem;
+.App {
+  max-width: 860px;
+  margin: 40px auto;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+/* Button styling */
+button {
+  background: none;
+  border: 2.5px solid white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.3em;
+}
 
+button:hover {
+  background: gray;
+  color: white;
+}
 
 /* .square > img {
   display: block;
@@ -101,11 +103,7 @@ body {
   transform: translateY(0);
 }
 
-img{
-  align-items: center;
-  height: 30%;
-  width: 30%;
-}
+
 .card-grid {
   margin-top: 40px;
   display: grid;
@@ -113,34 +111,6 @@ img{
   grid-gap: 20px;
 }
 
-/* * {
-  box-sizing: border-box;
-}
-
-body {
-  background: #d0e0e6;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  line-height: 1;
-  font-family: "Patrick Hand", sans-serif;
-}
-
-p {
-  text-align: right;
-  font-size: 50px;
-  color: #999;
-  margin-top: 0;
-  margin-bottom: 10px;
-  margin-right: 10px;
-}
-
-p strong {
-  font-size: 14px;
-  color: #777;
-}
 
 .cards {
   display: grid;
@@ -148,21 +118,7 @@ p strong {
   gap: 20px;
 }
 
-.hero-card {
-  height: 180px;
-  width: 180px;
-  border-radius: 2px;
-  background: #000;
-  cursor: pointer;
-  background: none;
-  border: none;
-  outline: none;
-}
-
-.hero-card.flipped .inner {
-  transform: rotateY(180deg);
-}
-
+/* 
 .inner {
   position: relative;
   width: 100%;
