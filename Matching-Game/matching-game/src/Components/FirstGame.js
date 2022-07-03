@@ -5,16 +5,16 @@ import SingleCard from "./SingleCard";
 import { useEffect } from "react";
 
 const cardImages = [
-  { "src": "/images/batman-1.png" },
-  { "src": "/images/superman-1.png" },
-  { "src": "/images/hulk-1.png" },
-  { "src": "/images/flash-1.png" },
-  { "src": "/images/thor-1.png" },
-  { "src": "/images/captainamerica-1.png" },
-  { "src": "/images/spiderman-1.png"},
-  { "src": "/images/ironman-1.png"},
-  { "src": "/images/wonderwoman-1.png"},
-  { "src": "/images/aquaman-1.png"},
+  { "src": "/images/batman-1.png", matched: false },
+  { "src": "/images/superman-1.png", matched: false },
+  { "src": "/images/hulk-1.png", matched: false },
+  { "src": "/images/flash-1.png", matched: false },
+  { "src": "/images/thor-1.png", matched: false },
+  { "src": "/images/captainamerica-1.png", matched: false },
+  { "src": "/images/spiderman-1.png", matched: false },
+  { "src": "/images/ironman-1.png", matched: false },
+  { "src": "/images/wonderwoman-1.png", matched: false },
+  { "src": "/images/aquaman-1.png", matched: false }
 ]
  function FirstGame() {
    const [cards, setCards] = useState([])
@@ -43,14 +43,23 @@ const cardImages = [
      if (choiceOne && choiceTwo) {
 
       if (choiceOne.src === choiceTwo.src) {
-        console.log('A Match!')
+        setCards(prevCards => {
+          return prevCards.map(card => {
+            if (card.src === choiceOne.src) {
+              return{...card, matched: true}
+            } else {
+              return card
+            }
+          })
+        })
         resetTurn()
       } else {
-        console.log('NOT a Match!')
         resetTurn()
       }
      }
    }, [choiceOne, choiceTwo])
+
+   console.log(cards)
 
 // Reset choices
 const resetTurn = () => {
@@ -68,6 +77,7 @@ const resetTurn = () => {
        key={card.id} 
        card={card} 
        handleChoice={handleChoice}
+       flipped={card === choiceOne || card === choiceTwo || card.matched}
        />
 
      ))}
