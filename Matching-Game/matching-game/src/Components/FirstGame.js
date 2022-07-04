@@ -3,6 +3,7 @@ import "../App.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import FirstCard from "./FirstCard";
+import { Link } from "react-router-dom";
 
 const cardImages = [
   { src: "/images/batman-1.png", matched: false },
@@ -81,6 +82,7 @@ function FirstGame() {
     <div className="Hero">
       <h2>Matching Game 1</h2>
       <button onClick={shuffleCards}>New Game</button>
+      <Link to="/"><button>Home </button></Link>
 
       <div className="card-grid">
         {cards.map((card) => (

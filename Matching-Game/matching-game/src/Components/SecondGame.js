@@ -3,6 +3,7 @@ import "../App.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import SecondCard from "./SecondCard";
+import { Link } from "react-router-dom";
 
 const cardImages = [
   { src: "/images/link.png", matched: false },
@@ -81,6 +82,7 @@ function SecondGame() {
     <div className="Video">
       <h2>Matching Game 2</h2>
       <button onClick={shuffleCards}>New Game</button>
+      <Link to="/"><button>Home </button></Link>
 
       <div className="card-grid">
         {cards.map((card) => (

@@ -3,6 +3,7 @@ import "../App.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import ThirdCard from "./ThirdCard";
+import { Link } from "react-router-dom";
 
 const cardImages = [
   { src: "/images/cat.png", matched: false },
@@ -78,9 +79,10 @@ function ThirdGame() {
 
   }, [])
   return (
-    <div className="Video">
-      <h2>Matching Game 2</h2>
+    <div className="animal">
+      <h2>Matching Game 3</h2>
       <button onClick={shuffleCards}>New Game</button>
+      <Link to="/"><button>Home </button></Link>
 
       <div className="card-grid">
         {cards.map((card) => (
