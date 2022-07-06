@@ -1,4 +1,4 @@
-# The Ultimate Matching-Game
+# Matching-Game
 ___
 This is a simple matching game. I got the idea from watching my 4 year old nephew play a matching game and thinking to myself "Hey! I can totally make that using React!" Fast-forward to project 4 and we have the freedom to choose on what to make. I also (in the future) would like to do coding for a video game company. It may be a simple matching game, but I enjoyed making this game especially knowing it was going to be for my nephew.
 
