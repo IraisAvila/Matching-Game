@@ -6,16 +6,16 @@ import FirstCard from "./FirstCard";
 import { Link } from "react-router-dom";
 
 const cardImages = [
-  { src: "/images/batman-1.png", matched: false },
-  { src: "/images/superman-1.png", matched: false },
-  { src: "/images/hulk-1.png", matched: false },
-  { src: "/images/flash-1.png", matched: false },
-  { src: "/images/thor-1.png", matched: false },
-  { src: "/images/captainamerica-1.png", matched: false },
-  { src: "/images/spiderman-1.png", matched: false },
-  { src: "/images/ironman-1.png", matched: false },
-  { src: "/images/wonderwoman-1.png", matched: false },
-  { src: "/images/aquaman-1.png", matched: false },
+  { src: "./images/batman-1.png", matched: false },
+  { src: "./images/superman-1.png", matched: false },
+  { src: "./images/hulk-1.png", matched: false },
+  { src: "./images/flash-1.png", matched: false },
+  { src: "./images/thor-1.png", matched: false },
+  { src: "./images/captainamerica-1.png", matched: false },
+  { src: "./images/spiderman-1.png", matched: false },
+  { src: "./images/ironman-1.png", matched: false },
+  { src: "./images/wonderwoman-1.png", matched: false },
+  { src: "./images/aquaman-1.png", matched: false },
 ];
 function FirstGame() {
   const [cards, setCards] = useState([]);

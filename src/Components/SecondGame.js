@@ -6,16 +6,16 @@ import SecondCard from "./SecondCard";
 import { Link } from "react-router-dom";
 
 const cardImages = [
-  { src: "/images/link.png", matched: false },
-  { src: "/images/kirby.png", matched: false },
-  { src: "/images/mario.png", matched: false },
-  { src: "/images/fallout.png", matched: false },
-  { src: "/images/sonic.png", matched: false },
-  { src: "/images/yoshi.png", matched: false },
-  { src: "/images/isabelle.png", matched: false },
-  { src: "/images/chicken.png", matched: false },
-  { src: "/images/master.png", matched: false },
-  { src: "/images/pikachu.png", matched: false },
+  { src: "./images/link.png", matched: false },
+  { src: "./images/kirby.png", matched: false },
+  { src: "./images/mario.png", matched: false },
+  { src: "./images/fallout.png", matched: false },
+  { src: "./images/sonic.png", matched: false },
+  { src: "./images/yoshi.png", matched: false },
+  { src: "./images/isabelle.png", matched: false },
+  { src: "./images/chicken.png", matched: false },
+  { src: "./images/master.png", matched: false },
+  { src: "./images/pikachu.png", matched: false },
 ];
 function SecondGame() {
   const [cards, setCards] = useState([]);

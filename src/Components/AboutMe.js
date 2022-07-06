@@ -11,7 +11,7 @@ export default function AboutMe() {
       </Link>
       <h2>About Me</h2>
       <br></br>
-      <img className="irais" src="/images/irais.jpeg" />
+      <img className="irais" src="./images/irais.jpeg" />
       <p>
         {" "}
         Hello, World! I'm happy you're here! Irais and I made this app/website

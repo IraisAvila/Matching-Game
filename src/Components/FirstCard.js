@@ -15,7 +15,7 @@ export default function FirstCard({ card, handleChoice, flipped, disabled }) {
         <img className="front" src={card.src} alt="card front" />
         <img 
         className="back" 
-        src="/images/paper.webp" 
+        src="./images/paper.webp" 
         onClick={handleClick} 
         alt="card back" 
         />

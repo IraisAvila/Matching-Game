@@ -7,16 +7,16 @@ import { Link } from "react-router-dom";
 
 //Array of card images
 const cardImages = [
-  { src: "/images/cat.png", matched: false },
-  { src: "/images/panda.png", matched: false },
-  { src: "/images/sloth.png", matched: false },
-  { src: "/images/koala.png", matched: false },
-  { src: "/images/corgi.png", matched: false },
-  { src: "/images/monkey.png", matched: false },
-  { src: "/images/elephant.png", matched: false },
-  { src: "/images/bear.png", matched: false },
-  { src: "/images/chickenn.png", matched: false },
-  { src: "/images/pig.png", matched: false },
+  { src: "./images/cat.png", matched: false },
+  { src: "./images/panda.png", matched: false },
+  { src: "./images/sloth.png", matched: false },
+  { src: "./images/koala.png", matched: false },
+  { src: "./images/corgi.png", matched: false },
+  { src: "./images/monkey.png", matched: false },
+  { src: "./images/elephant.png", matched: false },
+  { src: "./images/bear.png", matched: false },
+  { src: "./images/chickenn.png", matched: false },
+  { src: "./images/pig.png", matched: false },
 ];
 function ThirdGame() {
   const [cards, setCards] = useState([]);
