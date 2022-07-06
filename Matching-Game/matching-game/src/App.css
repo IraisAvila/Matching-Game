@@ -150,6 +150,13 @@ height: 10%;
   color: #fff;
   transform: scale(1.02);
 } */
+.github {
+  color: white;
+  padding: 5px;
+}
+.linkedin {
+  color: white;
+}
 
 .irais {
   border: 2px solid #ddd;
