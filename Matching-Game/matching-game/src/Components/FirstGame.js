@@ -60,7 +60,7 @@ function FirstGame() {
         });
         resetTurn();
       } else {
-        setTimeout(() => resetTurn(), 1200);
+        setTimeout(() => resetTurn(), 1100);
       }
     }
   }, [choiceOne, choiceTwo]);
@@ -80,9 +80,9 @@ function FirstGame() {
   }, [])
   return (
     <div className="Hero">
-      <h2>Matching Game 1</h2>
       <button onClick={shuffleCards}>New Game</button>
       <Link to="/"><button>Home </button></Link>
+      <h2>Superhero Matching</h2>
 
       <div className="card-grid">
         {cards.map((card) => (

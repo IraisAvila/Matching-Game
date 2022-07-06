@@ -6,10 +6,10 @@ const Homepage = (params) => {
     <div>
         <div className="square">
             <Link to={params.site}>
-                <img src={params.link}/>
+                <img className="picture" src={params.link}/>
             </Link>
         </div>
-        <p>{params.Topic}</p>
+        <h3>{params.Topic}</h3>
     </div>
   );
   

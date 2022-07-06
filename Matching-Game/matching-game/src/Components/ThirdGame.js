@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import ThirdCard from "./ThirdCard";
 import { Link } from "react-router-dom";
 
+//Array of card images
 const cardImages = [
   { src: "/images/cat.png", matched: false },
   { src: "/images/panda.png", matched: false },
@@ -60,7 +61,7 @@ function ThirdGame() {
         });
         resetTurn();
       } else {
-        setTimeout(() => resetTurn(), 1200);
+        setTimeout(() => resetTurn(), 1100);
       }
     }
   }, [choiceOne, choiceTwo]);
@@ -80,9 +81,9 @@ function ThirdGame() {
   }, [])
   return (
     <div className="animal">
-      <h2>Matching Game 3</h2>
       <button onClick={shuffleCards}>New Game</button>
       <Link to="/"><button>Home </button></Link>
+      <h2>Animal Matching</h2>
 
       <div className="card-grid">
         {cards.map((card) => (

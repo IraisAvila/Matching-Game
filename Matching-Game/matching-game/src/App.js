@@ -1,13 +1,13 @@
 import './App.css';
 import 'animate.css';
 import Homepage from './Components/HomePage';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import FirstGame from './Components/FirstGame';
 import SecondGame from './Components/SecondGame';
 import ThirdGame from './Components/ThirdGame';
+import AboutMe from './Components/AboutMe';
 
 function App() {
-// const array = ["Topic 1","Topic 2","Topic 3"]
 const array = [
   {
     "Topic": 'Superheros',
@@ -34,11 +34,13 @@ const array = [
   return (
     <div>
       <nav>
-          <h1 className="animate__animated animate__rubberBand">Matching</h1>
+          <h1 className="animate__animated animate__rubberBand">The Ultimate Matching Game</h1>
+          <Link to="/about"><button>About Me </button></Link>
       </nav>
       <main>
         <Routes>
           <Route path="/" element={listGames} />
+          <Route path="/about" element={<AboutMe />} />
           <Route path="/hero" element={<FirstGame />} />
           <Route path="/video" element={<SecondGame />} />
           <Route path="/animal" element={<ThirdGame />} />
